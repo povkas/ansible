@@ -1,0 +1,66 @@
+- name: Install software
+  hosts: localhost
+  become: false
+  vars:
+    Brew_packages:
+      - asciidoctor
+    install_homebrew_if_missing: false
+  tasks:
+    - name: Install essential apps
+      homebrew:
+        name:
+          - alfred
+          - powerlevel10k
+          - clipy
+          - chezmoi
+          - visual-studio-code
+          - stats
+          - spotify
+          - numi
+          - microsoft-teams
+          - google-chrome
+          - intellij-idea
+          - flux
+          - iterm2
+        state: present
+
+    - name: Install personal apps
+      homebrew:
+        name:
+          - calibre
+          - dbeaver-community
+          - docker
+          - disk-inventory-x
+          - discord
+          - figma
+          - firefox
+          - folx
+          - freedom
+          - google-drive
+          - microsoft-remote-desktop
+          - notion
+          - postman
+          - slack
+          - telegram
+          - tempbox
+          - ticktick
+          - virtualbox
+          - vlc
+          - zoom
+          # Logi Options
+
+    - name: Install essential apps from App Store
+      community.general.mas:
+        id:
+          - id975890633 # HotKey
+          - id784801555 # OneNote
+          - id462058435 # Microsoft Excel
+          - id462054704 # microsoft Word
+          - id462062816 # Microsoft PowerPoint
+        state: present
+        
+    - name: Install personal apps from App Store
+      community.general.mas:
+        id:
+          - id568494494 # Pocket
+        state: present
