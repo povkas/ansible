@@ -1,3 +1,11 @@
+- name: Install config manager - Chezmoi
+  homebrew:
+    name:
+      - chezmoi
+    state: present
+  tags:
+    - dotfiles
+
 - name: Cloning .dotfiles
   ansible.builtin.git:
     repo: 'https://github.com/povkas/.dotfiles.git'
