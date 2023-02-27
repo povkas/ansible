@@ -1,0 +1,11 @@
+- hosts: localhost
+  tasks:
+    - include: tasks/dotfiles.yml
+    # - include: tasks/ssh.yml
+    - include: tasks/git-setup.yml
+    - include: tasks/applications.yml # needs fixing
+    - include: tasks/chrome-extensions.yml # TODO: fix needed
+    - include: tasks/npm-packages.yml # needs node
+    - include: tasks/app-store.yml
+
+    # - include: tasks/zsh-setup.yml

@@ -1,0 +1,89 @@
+- name: Create directories for extensions
+  vars:
+    chrome_extension_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/Default/Extensions"
+    chrome_extensions:
+      - name: JSON Formatter
+        url: https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+  file:
+    path: "{{ chrome_extension_dir }}/{{ item.name }}" 
+    state: directory
+  with_items: "{{ chrome_extensions }}"
+  tags:
+    - chrome-extensions
+
+
+- name: Install Chrome extensions
+  vars:
+    chrome_extension_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/Default/Extensions"
+    chrome_extensions:
+      - name: JSON Formatter
+        url: https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+
+  # become_user: "{{ ansible_user }}"
+  # file:
+  #   path: "{{ chrome_extension_dir }}/{{ item.name }}" 
+  #   state: directory
+  unarchive:
+    src: "{{ item.url }}?hl=en"
+    dest: "{{ chrome_extension_dir }}/{{ item.name }}"
+    remote_src: yes
+  with_items: "{{ chrome_extensions }}"
+  # when: "'darwin' in ansible_system"
+  tags:
+    - chrome-extensions
+
+# - name: Install Save to Pocket extension
+#   chrome_extension:
+#     name: Save to Pocket
+#     state: present
+#     extension_id: niloccemoadcdkdjlinkgdfekeahmflj
+# - name: Install Grammarly extension
+#   chrome_extension:
+#     name: Grammarly for Chrome
+#     state: present
+#     extension_id: kbfnbcaeplbcioakkpcpgfkobkghlhen
+# - name: Install Video Speed Controller extension
+#   chrome_extension:
+#     name: Video Speed Controller
+#     state: present
+#     extension_id: nffaoalbilbmmfgbnbgppjihopabppdk
+# - name: Install Redux DevTools extension
+#   chrome_extension:
+#     name: Redux DevTools
+#     state: present
+#     extension_id: lmhkpmbekcpmknklioeibfkpmmfibljd
+# - name: Install React Developer Tools extension
+#   chrome_extension:
+#     name: React Developer Tools
+#     state: present
+#     extension_id: fmkadmapgofadopljbjfkapdkoienihi
+# - name: Install LastPass extension
+#   chrome_extension:
+#     name: LastPass
+#     state: present
+#     extension_id: hdokiejnpimakedhajhdlcegeplioahd
+# - name: Install Google dictionary extension
+#   chrome_extension:
+#     name: Google Dictionary
+#     state: present
+#     extension_id: mgijmajocgfcbeboacabfgobmjgjcoja
+# - name: Install Google Translate extension
+#   chrome_extension:
+#     name: Google Translate
+#     state: present
+#     extension_id: aapbdbdomjkkjkaonfhkkikfgjcajfhf
+# - name: Install Session Buddy extension
+#   chrome_extension:
+#     name: Session Buddy
+#     state: present
+#     extension_id: edacconmaakjimmfgnblocblbcdcpbko
+# - name: Install uBlock Origin extension
+#   chrome_extension:
+#     name: uBlock Origin
+#     state: present
+#     extension_id: cjpalhdlnbpafiamejdnhcphjbkeiagm
+# - name: Install Bookmark Search extension
+#   chrome_extension:
+#     name: Bookmark Search
+#     state: present
+#     extension_id: khamfnadkjhaengojfojaofinogfdeop

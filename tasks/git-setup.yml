@@ -4,7 +4,7 @@
     scope: global
     value: "p.krasavinas@gmail.com"
   tags:
-  - git-personal:
+  - git-personal
 - name: Git personal setup name
   git_config:
     name: user.name
