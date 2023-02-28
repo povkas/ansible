@@ -8,8 +8,8 @@
       # - 462062816 # Microsoft PowerPoint
     state: present
   tags:
-    - personal
     - work
+    - personal
     - appstore-essential
     
 - name: Install personal apps from App Store

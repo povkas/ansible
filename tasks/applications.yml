@@ -18,12 +18,13 @@
     name:
       "alfred,\
       clipy,\
-      intellij-idea,\
+      intellij-idea-ce,\
       iterm2,\
       microsoft-teams,\
       numi,\
       spotify,\
       stats,\
+      ticktick,\
       visual-studio-code"
       # google-chrome,\
     state: present
@@ -52,7 +53,6 @@
       slack,\
       telegram,\
       tempbox,\
-      ticktick,\
       virtualbox,\
       vlc,\
       zoom"

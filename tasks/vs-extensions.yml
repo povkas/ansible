@@ -1,0 +1,8 @@
+- name: Install VSCode extensions
+  shell: code --install-extension {{ item }}
+  with_items:
+    - k--kato.intellij-idea-keybindings
+    - vscodevim.vim
+  tags:
+    - work
+    - vs-extensions
