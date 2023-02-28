@@ -4,26 +4,29 @@
     scope: global
     value: "p.krasavinas@gmail.com"
   tags:
-  - git-personal
+  - personal
+
 - name: Git personal setup name
   git_config:
     name: user.name
     scope: global
     value: "Povilas Krasavinas"
   tags:
-  - git-personal
+  - personal
+
 - name: Nortal
   git_config:
     name: user.email
     scope: global
     value: "povilas.krasavinas@nortal.com"
   tags:
-  - git-nortal
+  - work
+
 - name: Git personal setup name
   git_config:
     name: user.name
     scope: global
     value: "Povilas Krasavinas"
   tags:
-  - git-nortal
+  - work
 

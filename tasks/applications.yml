@@ -1,53 +1,61 @@
 - name: Install essential apps
+  ignore_errors: true
   homebrew:
     name:
-      - alfred
-      - powerlevel10k
-      - clipy
-      - visual-studio-code
-      - stats
-      - spotify
-      - numi
-      - microsoft-teams
-      - google-chrome
-      - intellij-idea
-      - flux
-      - iterm2
-      - age
+      "romkatv/powerlevel10k/powerlevel10k,\
+      flux,\
+      age,\
+      mas"
     state: present
   tags:
     - work
+    - personal
+    - apps-essential
 
-- name: Install personal apps
-  homebrew:
+- name: Install essential casks (GUI apps)
+  ignore_errors: true
+  homebrew_cask:
     name:
-      - calibre
-      - dbeaver-community
-      - docker
-      - disk-inventory-x
-      - discord
-      - figma
-      - firefox
-      - folx
-      - freedom
-      - google-drive
-      - microsoft-remote-desktop
-      - notion
-      - postman
-      - slack
-      - telegram
-      - tempbox
-      - ticktick
-      - virtualbox
-      - vlc
-      - zoom
-      # Logi Options
+      "alfred,\
+      clipy,\
+      intellij-idea,\
+      iterm2,\
+      microsoft-teams,\
+      numi,\
+      spotify,\
+      stats,\
+      visual-studio-code"
+      # google-chrome,\
+    state: present
+  tags:
+    - work
+    - personal
+    - apps-essential
+
+- name: Install personal casks (GUI apps)
+  ignore_errors: true
+  homebrew_cask:
+    name:
+      "calibre,\
+      dbeaver-community,\
+      docker,\
+      disk-inventory-x,\
+      discord,\
+      figma,\
+      firefox,\
+      folx,\
+      freedom,\
+      google-drive,\
+      microsoft-remote-desktop,\
+      notion,\
+      postman,\
+      slack,\
+      telegram,\
+      tempbox,\
+      ticktick,\
+      virtualbox,\
+      vlc,\
+      zoom"
+    state: present
   tags:
     - personal
-# - name: Install test apps
-#   homebrew:
-#     name:
-#       - intellij-idea-ce
-#       # Logi Options
-#   tags:
-#     - chrome
