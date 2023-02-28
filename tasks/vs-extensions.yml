@@ -3,6 +3,10 @@
   with_items:
     - k--kato.intellij-idea-keybindings
     - vscodevim.vim
+    - esbenp.prettier-vscode
+    - dbaeumer.vscode-eslint
+    - VisualStudioExptTeam.vscodeintellicode
+    - VisualStudioExptTeam.intellicode-api-usage-examples
   tags:
     - work
     - vs-extensions
