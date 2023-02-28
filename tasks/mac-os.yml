@@ -1,0 +1,6 @@
+- name: Set basic macOS configs
+  script: "{{ playbook_dir | dirname + '/ansible/macOS.sh'}}"
+  tags:
+    - work
+    - personal
+    - macOS
