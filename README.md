@@ -1,9 +1,8 @@
-Prerequisites:
-    ansible
-    homebrew
+Prerequisites
+    `zsh install.sh` - to install homebrew and ansible
 
 Available flags:
     personal - install full setup for personal computer
     work - install full setup for work computer
 
-Example comman `ansible-playbook --tags "chrome" local.yml`
+Example command `ansible-playbook --tags "work" local.yml`

@@ -4,6 +4,8 @@
       - chezmoi
     state: present
   tags:
+    - work
+    - personal
     - dotfiles
 
 - name: Cloning .dotfiles
@@ -15,4 +17,6 @@
     accept_hostkey: yes
     version: main
   tags:
+    - work
+    - personal
     - dotfiles
