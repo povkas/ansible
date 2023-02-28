@@ -29,3 +29,12 @@
     value: "Povilas Krasavinas"
   tags:
   - work
+
+  - name: Git pull strategy
+  git_config:
+    name: pull.ff
+    scope: global
+    value: only
+  tags:
+  - git-nortal
+  - git-personal
