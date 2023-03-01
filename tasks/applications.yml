@@ -5,6 +5,7 @@
       "romkatv/powerlevel10k/powerlevel10k,\
       flux,\
       age,\
+      nvm,\
       mas"
     state: present
   tags:
