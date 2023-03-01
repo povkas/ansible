@@ -1,7 +1,6 @@
 - name: Install config manager - Chezmoi
   homebrew:
-    name:
-      - chezmoi
+    name: chezmoi
     state: present
   tags:
     - work
@@ -9,14 +8,21 @@
     - dotfiles
 
 - name: Cloning .dotfiles
-  ansible.builtin.git:
-    repo: 'https://github.com/povkas/.dotfiles.git'
-    dest: "{{ lookup('env', 'HOME') }}/.dotfiles"
-    recursive: yes
-    update: yes
-    accept_hostkey: yes
-    version: main
+  script: "{{ playbook_dir | dirname + '/ansible/chezmoi.sh'}}"
   tags:
     - work
     - personal
     - dotfiles
+
+# - name: Cloning .dotfiles
+#   ansible.builtin.git:
+#     repo: 'https://github.com/povkas/.dotfiles.git'
+#     dest: "{{ lookup('env', 'HOME') }}/test/dotfiles"
+#     recursive: yes
+#     update: yes
+#     accept_hostkey: yes
+#     version: main
+#   tags:
+#     - work
+#     - personal
+#     - dotfiles

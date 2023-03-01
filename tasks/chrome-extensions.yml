@@ -81,8 +81,3 @@
 #     name: uBlock Origin
 #     state: present
 #     extension_id: cjpalhdlnbpafiamejdnhcphjbkeiagm
-# - name: Install Bookmark Search extension
-#   chrome_extension:
-#     name: Bookmark Search
-#     state: present
-#     extension_id: khamfnadkjhaengojfojaofinogfdeop

@@ -1,5 +1,6 @@
 - hosts: localhost
   tasks:
+    - include: tasks/zsh-setup.yml
     - include: tasks/dotfiles.yml
     - include: tasks/ssh.yml
     - include: tasks/git-setup.yml
@@ -9,5 +10,3 @@
     - include: tasks/npm-packages.yml # needs node
     - include: tasks/app-store.yml
     - include: tasks/vs-extensions.yml
-
-    # - include: tasks/zsh-setup.yml
