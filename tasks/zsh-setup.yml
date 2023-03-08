@@ -11,6 +11,8 @@
     repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
     dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
   tags:
+    - work
+    - personal
     - zsh
 
 - name: Install zsh-syntax-highlighting
@@ -18,4 +20,6 @@
     repo: 'https://github.com/zsh-users/zsh-syntax-highlighting.git'
     dest: "~/.oh-my-zsh/plugins/zsh-syntax-highlighting"
   tags:
+    - work
+    - personal
     - zsh
