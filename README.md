@@ -12,4 +12,4 @@ TODO:
 * ssh config not setup
 * nvm setup not complete (node needs to be installed by hand)
 * chrome extensions script not working
-* powerlevel config needs configuring
+* setup asdf for langauge manager (can be used instead of nvm, jenv, etc)

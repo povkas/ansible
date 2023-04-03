@@ -2,8 +2,7 @@
   ignore_errors: true
   homebrew:
     name:
-      "romkatv/powerlevel10k/powerlevel10k,\
-      flux,\
+      "flux,\
       age,\
       nvm,\
       mas"

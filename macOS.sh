@@ -21,3 +21,5 @@ defaults write com.apple.dock "tilesize" -int "39" && killall Dock
 defaults write com.apple.dock "mineffect" -string "scale" && killall Dock
 
 defaults write com.apple.dock "mru-spaces" -bool "false" && killall Dock
+
+defaults write -g ApplePressAndHoldEnabled -bool "false"

@@ -5,6 +5,7 @@
     value: "p.krasavinas@gmail.com"
   tags:
   - personal
+  - git-personal
 
 - name: Git personal setup name
   git_config:
@@ -13,6 +14,7 @@
     value: "Povilas Krasavinas"
   tags:
   - personal
+  - git-personal
 
 - name: Nortal
   git_config:
