@@ -6,7 +6,7 @@
     - include: tasks/git-setup.yml
     - include: tasks/mac-os.yml
     - include: tasks/applications.yml
-    - include: tasks/chrome-extensions.yml # TODO: fix needed
+    - include: tasks/chrome-extensions.yml
     - include: tasks/npm-packages.yml # needs node
     - include: tasks/app-store.yml
     - include: tasks/vs-extensions.yml

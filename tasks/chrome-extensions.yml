@@ -1,83 +1,42 @@
 - name: Create directories for extensions
-  vars:
-    chrome_extension_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/Default/Extensions"
-    chrome_extensions:
-      - name: JSON Formatter
-        url: https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
   file:
-    path: "{{ chrome_extension_dir }}/{{ item.name }}" 
+    path: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/External Extensions"
     state: directory
-  with_items: "{{ chrome_extensions }}"
   tags:
     - chrome-extensions
+    - personal
 
-- name: Install Chrome extensions
+- name: Create directories for extensions
   vars:
-    chrome_extension_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/Default/Extensions"
+    chrome_extension_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/External Extensions"
     chrome_extensions:
-      - name: JSON Formatter
-        url: https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
-
-  # become_user: "{{ ansible_user }}"
-  # file:
-  #   path: "{{ chrome_extension_dir }}/{{ item.name }}" 
-  #   state: directory
-  unarchive:
-    src: "{{ item.url }}?hl=en"
-    dest: "{{ chrome_extension_dir }}/{{ item.name }}"
-    remote_src: yes
+      - name: 'Save to Pocket'
+        extension_id: niloccemoadcdkdjlinkgdfekeahmflj
+      - name: 'Grammarly for Chrome'
+        extension_id: kbfnbcaeplbcioakkpcpgfkobkghlhen
+      - name: Video Speed Controller
+        extension_id: nffaoalbilbmmfgbnbgppjihopabppdk
+      - name: Redux DevTools
+        extension_id: lmhkpmbekcpmknklioeibfkpmmfibljd
+      - name: React Developer Tools
+        extension_id: fmkadmapgofadopljbjfkapdkoienihi
+      - name: LastPass
+        extension_id: hdokiejnpimakedhajhdlcegeplioahd
+      - name: Google Dictionary
+        extension_id: mgijmajocgfcbeboacabfgobmjgjcoja
+      - name: Google Translate
+        extension_id: aapbdbdomjkkjkaonfhkkikfgjcajfhf
+      - name: Session Buddy
+        extension_id: edacconmaakjimmfgnblocblbcdcpbko
+      - name: uBlock Origin
+        extension_id: cjpalhdlnbpafiamejdnhcphjbkeiagm
+  copy:
+    dest: "{{ chrome_extension_dir }}/{{ item.extension_id }}.json" 
+    content: |
+      {
+        "external_update_url": "https://clients2.google.com/service/update2/crx"
+      }
   with_items: "{{ chrome_extensions }}"
-  # when: "'darwin' in ansible_system"
   tags:
     - chrome-extensions
-
-# - name: Install Save to Pocket extension
-#   chrome_extension:
-#     name: Save to Pocket
-#     state: present
-#     extension_id: niloccemoadcdkdjlinkgdfekeahmflj
-# - name: Install Grammarly extension
-#   chrome_extension:
-#     name: Grammarly for Chrome
-#     state: present
-#     extension_id: kbfnbcaeplbcioakkpcpgfkobkghlhen
-# - name: Install Video Speed Controller extension
-#   chrome_extension:
-#     name: Video Speed Controller
-#     state: present
-#     extension_id: nffaoalbilbmmfgbnbgppjihopabppdk
-# - name: Install Redux DevTools extension
-#   chrome_extension:
-#     name: Redux DevTools
-#     state: present
-#     extension_id: lmhkpmbekcpmknklioeibfkpmmfibljd
-# - name: Install React Developer Tools extension
-#   chrome_extension:
-#     name: React Developer Tools
-#     state: present
-#     extension_id: fmkadmapgofadopljbjfkapdkoienihi
-# - name: Install LastPass extension
-#   chrome_extension:
-#     name: LastPass
-#     state: present
-#     extension_id: hdokiejnpimakedhajhdlcegeplioahd
-# - name: Install Google dictionary extension
-#   chrome_extension:
-#     name: Google Dictionary
-#     state: present
-#     extension_id: mgijmajocgfcbeboacabfgobmjgjcoja
-# - name: Install Google Translate extension
-#   chrome_extension:
-#     name: Google Translate
-#     state: present
-#     extension_id: aapbdbdomjkkjkaonfhkkikfgjcajfhf
-# - name: Install Session Buddy extension
-#   chrome_extension:
-#     name: Session Buddy
-#     state: present
-#     extension_id: edacconmaakjimmfgnblocblbcdcpbko
-# - name: Install uBlock Origin extension
-#   chrome_extension:
-#     name: uBlock Origin
-#     state: present
-#     extension_id: cjpalhdlnbpafiamejdnhcphjbkeiagm
+    - personal
