@@ -4,8 +4,6 @@
     mode: 0700
     state: directory
   tags:
-    # - dotfiles
-    - install
     - ssh
 
 - name: Install ssh key
@@ -14,8 +12,6 @@
     dest: "{{ dest_key }}"
     mode: 0600
   tags:
-    # - dotfiles
-    - install
     - ssh
 
 - name: Install ssh key public
@@ -24,8 +20,6 @@
     dest: "{{ dest_key }}.pub"
     mode: 0644
   tags:
-    # - dotfiles
-    - install
     - ssh
 
 - name: Set authorized key took from file

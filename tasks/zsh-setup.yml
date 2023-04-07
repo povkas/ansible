@@ -4,7 +4,7 @@
   tags:
     - work
     - personal
-    - zsh
+    - zsh-setup
 
 - name: Install zsh-autosuggestions
   ansible.builtin.git:
@@ -13,7 +13,7 @@
   tags:
     - work
     - personal
-    - zsh
+    - zsh-setup
 
 - name: Install zsh-syntax-highlighting
   ansible.builtin.git:
@@ -22,4 +22,4 @@
   tags:
     - work
     - personal
-    - zsh
+    - zsh-setup

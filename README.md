@@ -4,11 +4,20 @@ Prerequisites
 Available flags:
     personal - install full setup for personal computer
     work - install full setup for work computer
+    appstore-essential
+    apps-essential
+    asdf
+    chrome-extensions
+    dotfiles
+    git-personal
+    git-work
+    macOS
+    npm-packages
+    ssh
+    vs-extensions
+    zsh-setup
 
 Example command `ansible-playbook --tags "work" local.yml -vvv`
 
 TODO:
-
 * ssh config not setup
-* nvm setup not complete (node needs to be installed by hand)
-* setup asdf for langauge manager (can be used instead of nvm, jenv, etc)
