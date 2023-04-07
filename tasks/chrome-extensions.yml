@@ -5,6 +5,7 @@
   tags:
     - chrome-extensions
     - personal
+    - work
 
 - name: Create directories for extensions
   vars:
@@ -40,3 +41,4 @@
   tags:
     - chrome-extensions
     - personal
+    - work

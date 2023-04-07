@@ -7,6 +7,7 @@
     - include: tasks/mac-os.yml
     - include: tasks/applications.yml
     - include: tasks/chrome-extensions.yml
-    - include: tasks/npm-packages.yml # needs node
+    - include: tasks/asdf.yml
+    - include: tasks/npm-packages.yml
     - include: tasks/app-store.yml
     - include: tasks/vs-extensions.yml

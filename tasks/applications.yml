@@ -5,7 +5,10 @@
       "flux,\
       age,\
       nvm,\
-      mas"
+      mas,\
+      coreutils,\
+      curl,\
+      git"
     state: present
   tags:
     - work

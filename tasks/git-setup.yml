@@ -23,6 +23,7 @@
     value: "povilas.krasavinas@nortal.com"
   tags:
   - work
+  - git-work
 
 - name: Git personal setup name
   git_config:
@@ -31,6 +32,7 @@
     value: "Povilas Krasavinas"
   tags:
   - work
+  - git-work
 
   - name: Git pull strategy
   git_config:

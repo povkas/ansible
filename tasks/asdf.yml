@@ -1,29 +1,33 @@
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
 
-# - git:
-#     repo: https://github.com/asdf-vm/asdf.git
-#     dest: "/Users/{{ lookup('env', 'USER') }}/.asdf"
-#     version: v0.7.1
+- git:
+    repo: https://github.com/asdf-vm/asdf.git
+    dest: "/Users/{{ lookup('env', 'USER') }}/.asdf"
+    version: v0.11.3
+  tags: 
+    - work
+    - personal
+    - asdf
 
-# - name: "Install asdf plugins"
-#   shell: |
-#     source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
-#     asdf plugin-add {{ item }} || exit 0
-#   with_items:
-#     - ruby
-#     - elixir
-#     - nodejs
-#     - python
-#     - erlang
+- name: "Install asdf plugins"
+  shell: |
+    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+    asdf plugin-add {{ item }} || exit 0
+  with_items:
+    - java
+    - nodejs
+  tags:
+    - work
+    - personal
+    - asdf
 
-# - name: "Install Default Ruby"
-#   shell: |
-#     source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
-#     asdf install ruby 3.0.0
-#     asdf install ruby 2.7.2
-#     asdf global ruby 3.0.0
-#     gem install bundler -v 2.2.4
-#     gem install cocoapods
-#     gem install rubocop
-#     gem install solargraph
+- name: "Install Default Node"
+  shell: |
+    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+    brew install gpg
+    asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+    asdf install nodejs latest:16
+    asdf global nodejs latest:16
+  tags:
+    - work
+    - personal
+    - asdf
