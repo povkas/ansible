@@ -10,6 +10,7 @@
       curl,\
       bat,\
       tldr,\
+      nvim,\
       git"
     state: present
   tags:

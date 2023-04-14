@@ -23,3 +23,5 @@ defaults write com.apple.dock "mineffect" -string "scale" && killall Dock
 defaults write com.apple.dock "mru-spaces" -bool "false" && killall Dock
 
 defaults write -g ApplePressAndHoldEnabled -bool "false"
+
+defaults write com.apple.desktopservices DSDontWriteNetworkStores "true"
