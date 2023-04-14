@@ -8,6 +8,8 @@
       mas,\
       coreutils,\
       curl,\
+      bat,\
+      tldr,\
       git"
     state: present
   tags:
@@ -20,7 +22,7 @@
   homebrew_cask:
     name:
       "alfred,\
-      clipy,\
+      maccy,\
       intellij-idea-ce,\
       iterm2,\
       microsoft-teams,\
