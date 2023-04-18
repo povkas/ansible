@@ -17,10 +17,6 @@
         extension_id: kbfnbcaeplbcioakkpcpgfkobkghlhen
       - name: Video Speed Controller
         extension_id: nffaoalbilbmmfgbnbgppjihopabppdk
-      - name: Redux DevTools
-        extension_id: lmhkpmbekcpmknklioeibfkpmmfibljd
-      - name: React Developer Tools
-        extension_id: fmkadmapgofadopljbjfkapdkoienihi
       - name: LastPass
         extension_id: hdokiejnpimakedhajhdlcegeplioahd
       - name: Google Dictionary

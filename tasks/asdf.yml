@@ -1,16 +1,5 @@
-
-- git:
-    repo: https://github.com/asdf-vm/asdf.git
-    dest: "/Users/{{ lookup('env', 'USER') }}/.asdf"
-    version: v0.11.3
-  tags: 
-    - work
-    - personal
-    - asdf
-
 - name: "Install asdf plugins"
   shell: |
-    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
     asdf plugin-add {{ item }} || exit 0
   with_items:
     - java
@@ -22,11 +11,8 @@
 
 - name: "Install Default Node"
   shell: |
-    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
-    brew install gpg
-    asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-    asdf install nodejs latest:16
-    asdf global nodejs latest:16
+    asdf install nodejs latest:18
+    asdf global nodejs latest:18
   tags:
     - work
     - personal
