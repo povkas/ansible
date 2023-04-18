@@ -2,15 +2,14 @@
   ignore_errors: true
   homebrew:
     name:
-      "flux,\
-      age,\
-      nvm,\
+      "age,\
       mas,\
       coreutils,\
       curl,\
       bat,\
       tldr,\
       neovim,\
+      colima,\
       git"
     state: present
   tags:
@@ -24,15 +23,15 @@
     name:
       "alfred,\
       maccy,\
-      intellij-idea-ce,\
       iterm2,\
       microsoft-teams,\
       numi,\
+      flux,\
       spotify,\
       stats,\
       ticktick,\
-      visual-studio-code"
-      # google-chrome,\
+      visual-studio-code,\
+      google-chrome"
     state: present
   tags:
     - work
@@ -47,8 +46,6 @@
       dbeaver-community,\
       docker,\
       disk-inventory-x,\
-      discord,\
-      figma,\
       firefox,\
       folx,\
       freedom,\
