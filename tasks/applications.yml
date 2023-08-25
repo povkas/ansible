@@ -10,6 +10,7 @@
       tldr,\
       neovim,\
       colima,\
+      autojump,\
       git"
     state: present
   tags:
@@ -29,7 +30,9 @@
       flux,\
       spotify,\
       stats,\
-      ticktick,\
+      obsidian,\
+      freedom,\
+      insomnia,\
       visual-studio-code,\
       google-chrome"
     state: present
@@ -48,7 +51,6 @@
       disk-inventory-x,\
       firefox,\
       folx,\
-      freedom,\
       google-drive,\
       microsoft-remote-desktop,\
       notion,\

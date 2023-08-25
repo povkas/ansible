@@ -2,21 +2,9 @@
   community.general.mas:
     id:
       - 975890633 # HotKey
-      # - 784801555 # OneNote
-      # - 462058435 # Microsoft Excel
-      # - 462054704 # microsoft Word
-      # - 462062816 # Microsoft PowerPoint
     state: present
   tags:
     - work
     - personal
     - appstore-essential
     
-- name: Install personal apps from App Store
-  community.general.mas:
-    id:
-      - 568494494 # Pocket
-      # - 1333542190 # 1Password
-    state: present
-  tags:
-    - personal
