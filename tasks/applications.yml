@@ -11,6 +11,7 @@
       neovim,\
       colima,\
       autojump,\
+      ripgrep,\
       git"
     state: present
   tags:
