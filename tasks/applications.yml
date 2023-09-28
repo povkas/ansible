@@ -12,6 +12,8 @@
       colima,\
       autojump,\
       ripgrep,\
+      fzf,\
+      fd,\
       git"
     state: present
   tags:
