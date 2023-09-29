@@ -10,8 +10,11 @@
       tldr,\
       neovim,\
       colima,\
+      docker-compose,\
+      lazydocker,\
       autojump,\
       ripgrep,\
+      tmux,\
       fzf,\
       fd,\
       git"
@@ -35,8 +38,7 @@
       stats,\
       obsidian,\
       freedom,\
-      insomnia,\
-      visual-studio-code,\
+      dbeaver-community,\
       google-chrome"
     state: present
   tags:
@@ -49,7 +51,6 @@
   homebrew_cask:
     name:
       "calibre,\
-      dbeaver-community,\
       docker,\
       disk-inventory-x,\
       firefox,\
