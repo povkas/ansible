@@ -3,6 +3,8 @@
   homebrew:
     name:
       "age,\
+      asdf,\
+      yarn,\
       mas,\
       coreutils,\
       curl,\
@@ -10,6 +12,7 @@
       tldr,\
       neovim,\
       colima,\
+      docker,\
       docker-compose,\
       lazydocker,\
       autojump,\
@@ -23,6 +26,7 @@
     - work
     - personal
     - apps-essential
+    - apps-personal
 
 - name: Install essential casks (GUI apps)
   ignore_errors: true
@@ -35,7 +39,6 @@
       numi,\
       flux,\
       spotify,\
-      stats,\
       obsidian,\
       freedom,\
       dbeaver-community,\
@@ -45,26 +48,26 @@
     - work
     - personal
     - apps-essential
+    - apps-personal
 
 - name: Install personal casks (GUI apps)
   ignore_errors: true
   homebrew_cask:
     name:
       "calibre,\
-      docker,\
       disk-inventory-x,\
       firefox,\
       folx,\
+      stats,\
       google-drive,\
       microsoft-remote-desktop,\
       notion,\
       postman,\
       slack,\
-      telegram,\
       tempbox,\
       virtualbox,\
-      vlc,\
-      zoom"
+      vlc"
     state: present
   tags:
     - personal
+    - apps-personal

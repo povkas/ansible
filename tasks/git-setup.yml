@@ -14,6 +14,8 @@
     value: "Povilas Krasavinas"
   tags:
   - personal
+  - work
+  - git-work
   - git-personal
 
 - name: Nortal
@@ -21,15 +23,6 @@
     name: user.email
     scope: global
     value: "povilas.krasavinas@nortal.com"
-  tags:
-  - work
-  - git-work
-
-- name: Git personal setup name
-  git_config:
-    name: user.name
-    scope: global
-    value: "Povilas Krasavinas"
   tags:
   - work
   - git-work
