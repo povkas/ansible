@@ -9,7 +9,6 @@
       coreutils,\
       curl,\
       bat,\
-      tldr,\
       neovim,\
       colima,\
       docker,\
