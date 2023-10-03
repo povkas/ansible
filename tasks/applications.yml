@@ -1,4 +1,4 @@
-- name: Install essential apps
+- name: Install common apps
   ignore_errors: true
   homebrew:
     name:
@@ -24,36 +24,35 @@
   tags:
     - work
     - personal
-    - apps-essential
+    - apps
     - apps-personal
 
-- name: Install essential casks (GUI apps)
+- name: Install common casks (GUI apps)
   ignore_errors: true
   homebrew_cask:
     name:
-      "alfred,\
-      maccy,\
+      "maccy,\
       iterm2,\
-      microsoft-teams,\
       numi,\
       flux,\
       spotify,\
       obsidian,\
-      freedom,\
       dbeaver-community,\
       google-chrome"
     state: present
   tags:
     - work
     - personal
-    - apps-essential
+    - apps
     - apps-personal
 
 - name: Install personal casks (GUI apps)
   ignore_errors: true
   homebrew_cask:
     name:
-      "calibre,\
+      "alfred,\
+      freedom,\
+      calibre,\
       disk-inventory-x,\
       firefox,\
       folx,\
@@ -61,7 +60,6 @@
       google-drive,\
       microsoft-remote-desktop,\
       notion,\
-      postman,\
       slack,\
       tempbox,\
       virtualbox,\

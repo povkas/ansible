@@ -4,8 +4,8 @@ Prerequisites
 Available flags:
 * personal - install full setup for personal computer
 * work - install full setup for work computer
-* appstore-essential
-* apps-essential
+* appstore
+* apps
 * asdf
 * chrome-extensions
 * dotfiles

@@ -1,4 +1,4 @@
-- name: Install essential apps from App Store
+- name: Install apps from App Store
   community.general.mas:
     id:
       - 975890633 # HotKey
@@ -6,5 +6,5 @@
   tags:
     - work
     - personal
-    - appstore-essential
+    - appstore
     

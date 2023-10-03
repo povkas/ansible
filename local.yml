@@ -10,6 +10,6 @@
     - include: tasks/asdf.yml
     - include: tasks/npm-packages.yml
     - include: tasks/app-store.yml
-    - include: tasks/vs-extensions.yml
+      #- include: tasks/vs-extensions.yml
     - include: tasks/neovim.yml
 

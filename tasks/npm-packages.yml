@@ -16,15 +16,6 @@
     - personal
     - npm-packages
 
-- name: Install Typescript server
-  npm:
-    name: typescript-language-server
-    global: yes
-  tags:
-    - work
-    - personal
-    - npm-packages
-
 - name: Install Typescript
   npm:
     name: typescript

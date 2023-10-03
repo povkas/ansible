@@ -11,10 +11,6 @@
   vars:
     chrome_extension_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/External Extensions"
     chrome_extensions:
-      - name: 'Save to Pocket'
-        extension_id: niloccemoadcdkdjlinkgdfekeahmflj
-      - name: 'Grammarly for Chrome'
-        extension_id: kbfnbcaeplbcioakkpcpgfkobkghlhen
       - name: Video Speed Controller
         extension_id: nffaoalbilbmmfgbnbgppjihopabppdk
       - name: LastPass
