@@ -17,7 +17,7 @@ Available flags:
 * vs-extensions
 * zsh-setup
 
-Example command `ansible-playbook --tags "work" local.yml -vvv`
+Example command `ansible-playbook --tags "work" ~/ansible/local.yml -vvv`
 
 TODO:
 * ssh config not setup

@@ -8,8 +8,8 @@
     - include: tasks/applications.yml
     - include: tasks/chrome-extensions.yml
     - include: tasks/asdf.yml
-    - include: tasks/npm-packages.yml
     - include: tasks/app-store.yml
-      #- include: tasks/vs-extensions.yml
     - include: tasks/neovim.yml
+      #- include: tasks/vs-extensions.yml
+      #- include: tasks/npm-packages.yml
 
