@@ -7,3 +7,13 @@
     - work
     - personal
     - neovim
+
+- name: Pull my nvim config
+  ansible.builtin.git:
+    repo: 'https://github.com/povkas/nvim'
+    dest: "{{ lookup('env', 'HOME') }}/.config/nvim"
+  tags:
+    - install
+    - work
+    - personal
+    - neovim
