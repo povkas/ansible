@@ -19,6 +19,7 @@
       tmux,\
       fzf,\
       fd,\
+      diff-so-fancy,\
       git"
     state: present
   tags:

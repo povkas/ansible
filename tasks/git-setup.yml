@@ -22,12 +22,12 @@
   git_config:
     name: user.email
     scope: global
-    value: "povilas.krasavinas@nortal.com"
+    value: "Povilas.Krasavinas@nortal.com"
   tags:
   - work
   - git-work
 
-  - name: Git pull strategy
+- name: Git pull strategy
   git_config:
     name: pull.ff
     scope: global
