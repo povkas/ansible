@@ -22,6 +22,7 @@
       fzf,\
       git,\
       tpm,\
+      usql,\
       font-jetbrains-mono-nerd-font"
     state: present
   tags:

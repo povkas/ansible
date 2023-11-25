@@ -25,3 +25,5 @@ defaults write com.apple.dock "mru-spaces" -bool "false" && killall Dock
 defaults write -g ApplePressAndHoldEnabled -bool "false"
 
 defaults write com.apple.desktopservices DSDontWriteNetworkStores "true"
+
+defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES && killall Dock
