@@ -17,10 +17,12 @@
       autojump,\
       ripgrep,\
       tmux,\
-      fzf,\
       fd,\
       diff-so-fancy,\
-      git"
+      fzf,\
+      git,\
+      tpm,\
+      font-jetbrains-mono-nerd-font"
     state: present
   tags:
     - work
@@ -33,9 +35,10 @@
   homebrew_cask:
     name:
       "maccy,\
-      iterm2,\
+      alacritty,\
       numi,\
       flux,\
+      stats,\
       spotify,\
       obsidian,\
       dbeaver-community,\
@@ -57,7 +60,6 @@
       disk-inventory-x,\
       firefox,\
       folx,\
-      stats,\
       google-drive,\
       microsoft-remote-desktop,\
       notion,\
