@@ -1,3 +1,11 @@
+- name: Add Font Tap in Homebrew
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Add Font Tap
+      homebrew_tap:
+        name: homebrew/cask-fonts 
+
 - name: Install common apps
   ignore_errors: true
   homebrew:
