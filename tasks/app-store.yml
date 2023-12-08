@@ -2,6 +2,7 @@
   community.general.mas:
     id:
       - 975890633 # HotKey
+      - 973130201 # BeFocused
     state: present
   tags:
     - work
