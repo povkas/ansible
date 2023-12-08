@@ -4,34 +4,38 @@
   tasks:
     - name: Add Font Tap
       homebrew_tap:
-        name: homebrew/cask-fonts 
+        name: homebrew/cask-fonts
 
 - name: Install common apps
   ignore_errors: true
   homebrew:
-    name:
+    name: 
       "age,\
+      autojump,\
       asdf,\
-      yarn,\
-      mas,\
-      coreutils,\
-      curl,\
       bat,\
-      neovim,\
+      coreutils,\
       colima,\
+      curl,\
       docker,\
       docker-compose,\
-      lazydocker,\
-      autojump,\
-      ripgrep,\
-      tmux,\
-      fd,\
       diff-so-fancy,\
+      exa,\
+      fd,\
       fzf,\
+      font-jetbrains-mono-nerd-font,\
       git,\
+      lazydocker,\
+      mas,\
+      neovim,\
+      ripgrep,\
+      rander,\
+      tmux,\
+      tldr,\
       tpm,\
       usql,\
-      font-jetbrains-mono-nerd-font"
+      xclip,\
+      yarn"
     state: present
   tags:
     - work
@@ -42,8 +46,7 @@
 - name: Install common casks (GUI apps)
   ignore_errors: true
   homebrew_cask:
-    name:
-      "maccy,\
+    name: "maccy,\
       alacritty,\
       numi,\
       flux,\
@@ -62,8 +65,7 @@
 - name: Install personal casks (GUI apps)
   ignore_errors: true
   homebrew_cask:
-    name:
-      "alfred,\
+    name: "alfred,\
       freedom,\
       calibre,\
       disk-inventory-x,\
