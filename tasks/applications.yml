@@ -10,8 +10,7 @@
   ignore_errors: true
   homebrew:
     name: 
-      "age,\
-      autojump,\
+      "autojump,\
       asdf,\
       bat,\
       coreutils,\
@@ -25,11 +24,14 @@
       fzf,\
       font-jetbrains-mono-nerd-font,\
       git,\
+      jq,\
+      prettierd,\
       lazydocker,\
       mas,\
       neovim,\
       ripgrep,\
       rander,\
+      whalebrew,\
       tmux,\
       tldr,\
       tpm,\
