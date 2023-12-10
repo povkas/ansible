@@ -5,8 +5,7 @@
 - name: Install common apps
   ignore_errors: true
   homebrew:
-    name: 
-      "autojump,\
+    name: "autojump,\
       asdf,\
       bat,\
       coreutils,\
@@ -15,7 +14,7 @@
       docker,\
       docker-compose,\
       diff-so-fancy,\
-      exa,\
+      eza,\
       fd,\
       fzf,\
       font-jetbrains-mono-nerd-font,\
