@@ -50,6 +50,7 @@
       stats,\
       spotify,\
       obsidian,\
+      rectangle,\
       dbeaver-community,\
       google-chrome"
     state: present
