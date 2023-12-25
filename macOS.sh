@@ -4,6 +4,8 @@ defaults write com.apple.finder AppleShowAllFiles yes && killall Finder
 
 defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true" && killall Finder
 
+defaults write com.apple.finder AppleShowAllFiles YES
+
 defaults write com.apple.finder "ShowPathbar" -bool "true" && killall Finder
 
 defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv" && killall Finder
