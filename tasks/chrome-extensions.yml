@@ -33,4 +33,29 @@
   tags:
     - chrome-extensions
     - personal
+
+- name: Create directories for extensions
+  vars:
+    chrome_extension_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Google/Chrome/External Extensions"
+    chrome_extensions:
+      - name: Video Speed Controller
+        extension_id: nffaoalbilbmmfgbnbgppjihopabppdk
+      - name: Google Dictionary
+        extension_id: mgijmajocgfcbeboacabfgobmjgjcoja
+      - name: Google Translate
+        extension_id: aapbdbdomjkkjkaonfhkkikfgjcajfhf
+      - name: Session Buddy
+        extension_id: edacconmaakjimmfgnblocblbcdcpbko
+      - name: uBlock Origin
+        extension_id: cjpalhdlnbpafiamejdnhcphjbkeiagm
+  copy:
+    dest: "{{ chrome_extension_dir }}/{{ item.extension_id }}.json" 
+    content: |
+      {
+        "external_update_url": "https://clients2.google.com/service/update2/crx"
+      }
+  with_items: "{{ chrome_extensions }}"
+  tags:
+    - chrome-extensions
     - work
+
