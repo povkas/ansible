@@ -1,16 +1,15 @@
 - hosts: localhost
   tasks:
-    - include: tasks/zsh-setup.yml
-    - include: tasks/powerlevel10k.yml
-    - include: tasks/dotfiles.yml
-    - include: tasks/ssh.yml
-    - include: tasks/git-setup.yml
-    - include: tasks/mac-os.yml
-    - include: tasks/applications.yml
-    - include: tasks/chrome-extensions.yml
-    - include: tasks/asdf.yml
-    - include: tasks/app-store.yml
-    - include: tasks/neovim.yml
-      #- include: tasks/vs-extensions.yml
-      #- include: tasks/npm-packages.yml
-
+    - import_tasks: tasks/zsh-setup.yml
+    - import_tasks: tasks/powerlevel10k.yml
+    - import_tasks: tasks/dotfiles.yml
+    - import_tasks: tasks/ssh.yml
+    - import_tasks: tasks/git-setup.yml
+    - import_tasks: tasks/mac-os.yml
+    - import_tasks: tasks/applications.yml
+    - import_tasks: tasks/chrome-extensions.yml
+    - import_tasks: tasks/asdf.yml
+    - import_tasks: tasks/app-store.yml
+    - import_tasks: tasks/neovim.yml
+      #- import_tasks: tasks/vs-extensions.yml
+      #- import_tasks: tasks/npm-packages.yml
