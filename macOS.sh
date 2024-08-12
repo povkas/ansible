@@ -29,3 +29,7 @@ defaults write -g ApplePressAndHoldEnabled -bool "false"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores "true"
 
 defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES && killall Dock
+
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+defaults write NSGlobalDomain KeyRepeat -int 2
