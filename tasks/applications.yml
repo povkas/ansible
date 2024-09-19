@@ -57,6 +57,9 @@
       stats,\
       rectangle,\
       dbeaver-community,\
+      monitorcontrol,\
+      caffeine,\
+      karabiner-elements,\
       microsoft-remote-desktop,\
       google-chrome"
     state: present
