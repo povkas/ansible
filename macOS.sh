@@ -33,3 +33,5 @@ defaults write com.apple.dock workspaces-swoosh-animation-off -bool YES && killa
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 defaults write NSGlobalDomain KeyRepeat -int 2
+
+defaults write com.apple.dock no-bouncing -bool TRUE
