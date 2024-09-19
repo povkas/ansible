@@ -38,6 +38,15 @@
     - apps
     - apps-personal
 
+- name: Install personal casks (GUI apps)
+  ignore_errors: true
+  homebrew:
+    name: "tmpmail"
+    state: present
+    tags:
+      - apps
+      - personal
+
 - name: Install common casks (GUI apps)
   ignore_errors: true
   homebrew_cask:
@@ -70,7 +79,6 @@
       google-drive,\
       notion,\
       slack,\
-      tempbox,\
       virtualbox,\
       vlc"
     state: present
