@@ -38,7 +38,7 @@
     - apps
     - apps-personal
 
-- name: Install personal casks (GUI apps)
+- name: Install personal apps
   ignore_errors: true
   homebrew:
     name: "tmpmail"
@@ -55,7 +55,6 @@
       numi,\
       flux,\
       stats,\
-      obsidian,\
       rectangle,\
       dbeaver-community,\
       microsoft-remote-desktop,\
@@ -71,7 +70,6 @@
   ignore_errors: true
   homebrew_cask:
     name: "alfred,\
-      freedom,\
       calibre,\
       disk-inventory-x,\
       firefox,\

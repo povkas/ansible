@@ -13,8 +13,6 @@
     chrome_extensions:
       - name: Video Speed Controller
         extension_id: nffaoalbilbmmfgbnbgppjihopabppdk
-      - name: LastPass
-        extension_id: hdokiejnpimakedhajhdlcegeplioahd
       - name: Google Dictionary
         extension_id: mgijmajocgfcbeboacabfgobmjgjcoja
       - name: Google Translate
