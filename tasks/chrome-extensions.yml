@@ -46,6 +46,8 @@
         extension_id: edacconmaakjimmfgnblocblbcdcpbko
       - name: uBlock Origin
         extension_id: cjpalhdlnbpafiamejdnhcphjbkeiagm
+      - name: Vimium
+        extension_id: dbepggeogbaibhgnhhndojpepiihcmeb
   copy:
     dest: "{{ chrome_extension_dir }}/{{ item.extension_id }}.json" 
     content: |

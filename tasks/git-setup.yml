@@ -22,7 +22,7 @@
   git_config:
     name: user.email
     scope: global
-    value: "Povilas.Krasavinas@nortal.com"
+    value: "vpovilkr@amazon.com"
   tags:
   - work
   - git-work

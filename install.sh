@@ -3,6 +3,17 @@
 # Check if Homebrew is already installed
 which -s brew
 
+installAnsible() {
+    which -s ansible
+    if [[ $? != 0 ]] ; then
+        echo 'Installing Ansible'
+
+        brew install ansible
+    else 
+        echo 'Ansible already installed'
+    fi
+}
+
 if [[ $? != 0 ]] ; then
 
     if ! which xcodebuild >/dev/null; then
@@ -28,13 +39,3 @@ else
     installAnsible
 fi
 
-installAnsible() {
-    which -s ansible
-    if [[ $? != 0 ]] ; then
-        echo 'Installing Ansible'
-
-        brew install ansible
-    else 
-        echo 'Ansible already installed'
-    fi
-}

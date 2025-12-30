@@ -28,7 +28,6 @@
       tmux,\
       tldr,\
       tpm,\
-      usql,\
       xclip,\
       yarn"
     state: present
@@ -55,8 +54,8 @@
       numi,\
       flux,\
       stats,\
+      insomnia,\
       rectangle,\
-      dbeaver-community,\
       monitorcontrol,\
       caffeine,\
       karabiner-elements,\
@@ -77,6 +76,8 @@
       disk-inventory-x,\
       firefox,\
       folx,\
+      dbeaver-community,\
+      usql,\
       google-drive,\
       notion,\
       slack,\
